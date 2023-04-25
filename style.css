@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.gameWorld {
+  background: url(8552481.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  
+}
+#playBoard {
+  width: 80vmin;
+  height: 80vmin;
+  background: linear-gradient(
+    rgb(73, 216, 255),
+    rgb(154, 252, 154),
+    rgb(179, 255, 129)
+  );
+  margin-left: 200px;
+  border: 7px solid rgb(11, 11, 11);
+  outline: 3px dashed rgb(0, 0, 0);
+  display: grid;
+  grid-template-rows: repeat(30, 1fr);
+  grid-template-columns: repeat(30, 1fr);
+}
+.head {
+  background: linear-gradient(yellow, red);
+  border: 2px solid black;
+  border-radius: 3px;
+ 
+}
+.food {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+.snake {
+  background-color: rgb(31, 91, 240);
+  border: 1px solid black;
+  border-radius: 2px;
+  
+}
+#score{
+  position: absolute;
+  right: 350px;
+  top: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 54px;
+
+}
+#name{
+  position: absolute;
+  left: 250px;
+  top: 10px;
+  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 45px;
+}
+#se{
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  
+}
